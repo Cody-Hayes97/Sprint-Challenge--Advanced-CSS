@@ -34,13 +34,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+ Adaptive and responsive websites are made made to fit different screen sizes, however, adaptive designs fit to the size of specific screen widths and snap to different sizes at different widths.
+ while responsive design uses mainly percentages and rems to fit to any screen size. responsive design looks has more fluidity while adaptive design snaps the content to different sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+mobile first means that the developer is creating their content to at first fit the size of a phone or tablet and then using min width media queries to make the content larger to fit a desktop afterwards.
+a desktop first developer is creating their html and css to fit the size of a monitor screen first and then using max width queries to size it down to tablet and mobile sizes.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+setting the font size at first to 62.5% makes it easier for us to create a responsive layout. most browsers consider a font size of 16px to be default and therefore 100%. so setting 62.5% means we are setting the font size to 10px. an even number like 10 makes it simpler to scale up and down using rems.
+so if in a media query if i set font size to 50%, using rems would scale the entire bulk of content accordingly instead of using pixels and having to redo all of the sizing.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+preprocessing helps developers to write cleaner code faster and with more responsiveness. Preprocessing allows us more functionally when writing our CSS. whereas you would usually have one CSS file with the entirely of the webpages code base, Preprocessing allows us to import many different files into one CSS file, which makes the code easier to read and manage.
+as well preprocessing has added functionally such as variables, mixins, functions, and escapes.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing in the fact that it runs off of javascript and allows developers so much more freedom and ease when writing CSS. it feels like I am actually telling a human being what i want my website to look like because it is so easy to manage. especially with being able to import different less files into one CSS file. 
+One concept that gives me the most trouble so far is the amount of function you can use in less. there are so many functions and syntaxes that it seems overwhelming. i feel like theres always a better way to write something using a function as opposed to what im doing.
+though in a way, it feels very exciting that there is always more you can learn and always new ways to go about building content.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
