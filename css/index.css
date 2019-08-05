@@ -143,7 +143,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5e6164;
 }
 h1,
@@ -151,7 +151,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293b;
 }
 h2 {
@@ -169,6 +169,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
 .top-head {
   display: flex;
   justify-content: center;
@@ -176,6 +181,11 @@ p {
   flex-direction: column;
   margin-top: 1%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .top-head {
+    margin-top: 5%;
+  }
 }
 .top-head .logo {
   font-size: 35px;
@@ -188,6 +198,11 @@ p {
   margin-left: 41%;
   margin-top: 1%;
 }
+@media (max-width: 500px) {
+  .top-head .navi {
+    margin: 0;
+  }
+}
 .top-head .navi nav {
   font-size: 15px;
 }
@@ -197,6 +212,14 @@ p {
   display: flex;
   justify-content: space-between;
   width: 30%;
+}
+@media (max-width: 500px) {
+  .top-head .navi nav ul {
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 }
 .top-head .navi nav ul li {
   color: black;
@@ -226,10 +249,28 @@ footer {
 .home .intro .headimg img {
   border-radius: 7px;
 }
+@media (max-width: 500px) {
+  .home .intro .headimg img {
+    width: 100%;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .launch,
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .home .space-images img {
+    margin: 0;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -239,6 +280,11 @@ footer {
 }
 .home .visit-planets {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding: 0px 15px;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -253,8 +299,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 40px;
+    flex-direction: column-reverse;
+    padding: 0 15px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin-top: 3%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -269,6 +328,15 @@ footer {
   background-color: #22283a;
   height: 30px;
   border-radius: 3px;
+  font-family: "Ubuntu", sans-serif;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn button {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 5%;
+    font-size: 18px;
+  }
 }
 .home .walk .walk-text .btn button:hover {
   width: 23%;
@@ -282,6 +350,13 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 4%;
+    margin-left: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

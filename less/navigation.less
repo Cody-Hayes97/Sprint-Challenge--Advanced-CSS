@@ -7,6 +7,10 @@
   margin-top: 1%;
   text-align: center;
 
+  @media @phone {
+    margin-top: 5%;
+  }
+
   .logo {
     font-size: 35px;
     h1 {
@@ -19,6 +23,10 @@
     margin-left: 41%;
     margin-top: 1%;
 
+    @media @phone {
+      margin: 0;
+    }
+
     nav {
       .font();
 
@@ -28,6 +36,12 @@
         display: flex;
         justify-content: space-between;
         width: 30%;
+        @media @phone {
+          width: 100%;
+          padding: 0 10%;
+          margin-top: 5%;
+          margin-bottom: 5%;
+        }
 
         li {
           color: black;
