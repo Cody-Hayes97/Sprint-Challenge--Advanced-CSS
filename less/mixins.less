@@ -1,1 +1,20 @@
 // Mixins Here
+.image {
+  width: 100%;
+  img {
+    border-radius: 7px;
+  }
+}
+
+.font {
+  font-size: 15px;
+}
+
+.buttonlayout(@nav-bg; @background) {
+  width: 23%;
+  color: @nav-bg;
+  border: none;
+  background-color: @background;
+  height: 30px;
+  border-radius: 3px;
+}
